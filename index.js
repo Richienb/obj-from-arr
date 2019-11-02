@@ -1,7 +1,5 @@
 "use strict"
 
-module.exports = (input, { postfix = "rainbows" } = {}) => {
-    if (typeof input !== "string") throw new TypeError(`Expected a string, got ${typeof input}`)
+const _ = require("lodash")
 
-    return `${input} & ${postfix}`
-}
+module.exports = (arr, iteratee) => _.fromPairs(_.map(arr, (value, index, array) => [value, iteratee(value, index, array)]))

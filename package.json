@@ -1,8 +1,8 @@
 {
-    "name": "the-module",
+    "name": "obj-from-arr",
     "version": "0.0.0",
-    "description": "My awesome module.",
-    "repository": "https://github.com/Richienb/the-module.git",
+    "description": "Convert an array to an object based on the return value of an iteratee.",
+    "repository": "https://github.com/Richienb/obj-from-arr.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
     "license": "MIT",
     "main": "index.js",
@@ -11,14 +11,21 @@
         "index.d.ts"
     ],
     "engines": {
-        "node": ">=8"
+        "node": ">=4"
     },
     "scripts": {
         "lint": "eslint .",
         "test": "yarn lint && ava"
     },
-    "keywords": [],
-    "dependencies": {},
+    "keywords": [
+        "array",
+        "object",
+        "iteratee",
+        "convert"
+    ],
+    "dependencies": {
+        "lodash": "^4.17.15"
+    },
     "devDependencies": {
         "ava": "^2.1.0",
         "eslint": "^6.6.0",
