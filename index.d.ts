@@ -15,6 +15,6 @@
  * //=> { "a": 1, "b": 2, "c": 3 }
  * ```
 */
-declare function objFromArr<T extends Array>(arr: T, iteratee: (value: any, index: number, array: T) => any): object;
+declare function objFromArr<T extends Array<any>>(arr: T, iteratee: (value: any, index: number, array: T) => any): object;
 
 export = objFromArr;
