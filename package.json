@@ -1,6 +1,6 @@
 {
     "name": "obj-from-arr",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "Convert an array to an object based on the return value of an iteratee.",
     "repository": "https://github.com/Richienb/obj-from-arr.git",
     "author": "Richie Bendall <richiebendall@gmail.com>",
